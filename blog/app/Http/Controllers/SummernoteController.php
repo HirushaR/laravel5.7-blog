@@ -41,7 +41,7 @@ class SummernoteController extends Controller
     {
         DB::table('post')->where('id',$request['id'])->update([
             'title' =>$request['title'],
-            'details' =>  $request['Summernote']
+            'details' =>  $request['summernote']
         ]);
         return back();
     }

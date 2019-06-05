@@ -27,12 +27,13 @@
                 @csrf
                 <div class="form-group">
                     <label for="title">  Title</label>
-                    <input type="hidden" name="id">
+                    <input type="hidden" name="id" value="{{$data->id}}">
                     <input type="text" name="title" id="title" class="form-control" value="{!! $data->title !!}">
                 </div>
                 <div class="form-group">
                     <textarea name="summernote" id="summernote" cols="30" rows="10" class="form-control">
                         {!! $data->details !!}
+
                     </textarea>
                 </div>
                 <div class="form-group">
